@@ -19,7 +19,7 @@ void input_value(vector<T>& buffer) {
 }
 
 template<class T>
-void print_buffer(vector<T>& buffer) {
+void print_buffer(const vector<T>& buffer) {
     // clear console
     system("cls");
 
@@ -36,7 +36,7 @@ void print_buffer(vector<T>& buffer) {
 }
 
 template<class T>
-void find_value(vector<T>& buffer) {
+void find_value(const vector<T>& buffer) {
     // clear console
     system("cls");
 
@@ -67,7 +67,7 @@ void find_value(vector<T>& buffer) {
 }
 
 template<class T>
-void check_sort(vector<T>& buffer) {
+void check_sort(const vector<T>& buffer) {
     // clear console
     system("cls");
 
