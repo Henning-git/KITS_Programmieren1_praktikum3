@@ -13,8 +13,13 @@ void readFraction(Fraction& f) {
     cout << "Zaehler: ";
     cin >> f.numerator;
 
-    cout << "Nenner: ";
-    cin >> f.denominator;
+    int denominator = 0;
+    do {
+        cout << "Nenner: ";
+        cin >> denominator;
+    } while(denominator == 0);
+
+    f.denominator = denominator;
 
     format(f);
 }
